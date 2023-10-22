@@ -1,9 +1,9 @@
 # Moscow Flat's Price Prediction Regression
 
-# Purpose of it
+## Purpose of it
 The purpose of this project is to develop a model that can correctly predict the cost of apartments in Moscow. Analysis and modeling of real estate data are of great practical importance, as they allow both consumers and sellers to make more informed decisions. Especially it can be helpful, deciding on which factors to base your prices on estate.
 
-# Structure
+## Structure
 
 
 bash
@@ -16,13 +16,13 @@ Copy code
 ├── README.md                           # README
 ├── requirements.txt                    # Libraries
 
-# Installing required libraries
+## Installing required libraries
 
 bash
 Copy code
 pip install -r requirements.txt
 
-# Data
+## Data
 A set of data on the sale of real estate in Moscow in 2014 is given.
 Your task: to conduct exploratory analysis, data preprocessing and implement linear regression in Scikit-Learn.
 
@@ -69,7 +69,7 @@ Information about the area:
 • 0_6_age – population under 6 years of age; 
 • 7_14_age – the population aged from 7 to 14 years.
 
-# Result
+## Result
 
 Significant factors:
 full_sq                - total area in sq. m, including loggias, balconies, etc.;
@@ -84,12 +84,13 @@ low_prices             - whether flat is in 33 quantile of prices or not (1/0)
 mid_prices             - whether flat is inbetween 33 quantile and 66 quantile of prices or not (1/0)
 high_prices            - whether flat is higher than 66 quantile of prices or not (1/0)
 
+---
 The best model for this sample should be considered a polynomial of degree 2, with a staggering 88% variation and good indicators for MAO, MSE, MAPE.
 ---
 It is worth using the usual linear regression / ridge regression, they have similar results, R^2 = 77%.
 ---
 In extreme cases, there is a combined L1 and L2, lower error values than the subsequent ones, and a good R^2 in ~ 75%.
-
+___
 
 # Autor
 Dmitriev Alexander - t.me/VondyB / vondy.work@gmail.com
